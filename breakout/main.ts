@@ -255,7 +255,7 @@ function updateView([, paddle, state]: any) {
 
 let restart: Subject<never>
 
-new Observable((observer: Subscriber<unknown>) => {
+new Observable((observer) => {
   drawIntro()
 
   restart = new Subject()
